@@ -1,0 +1,13 @@
+Google Friend Connect Member Widget 1.0.0 for the Silverstripe CMS
+//Release date here
+By pindiola@gmail.com
+
+Released under the BSD license. 
+
+A simple widget to add Google Friend Connect Member to the sidebar.
+
+INSTALLATION:
+Extract this to your SilverStripe root directory and run "db/build".
+
+USAGE:
+In the CMS visit a page with enabled widget sidebar and drag and drop the "HTML Content" box to the right.

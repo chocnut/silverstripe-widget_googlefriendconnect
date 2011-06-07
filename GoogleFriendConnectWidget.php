@@ -1,14 +1,7 @@
 <?php
-
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of GoogleFriendConnectWidget
+ * Adds Google Friend Connect Member Gadget to Silverstripe Widget
  *
- * @author peter
  */
 class GoogleFriendConnectWidget extends Widget {
 
@@ -29,7 +22,12 @@ class GoogleFriendConnectWidget extends Widget {
     static $cmsTitle = "Google Friend Connect Widget";
     
     static $description = "A widget that displays a Google Friend Connect";
-
+    
+    /**
+     * Renders Google Friend Connect Member Box
+     * 
+     * @return string html div and js for gfc
+     */
     function GoogleFriendConnect() {
         
         //Includes googlefriendconnect javascript to the page
@@ -61,7 +59,12 @@ class GoogleFriendConnectWidget extends Widget {
             </script>
 EOD;
     }
-
+    
+    /**
+     * Fields for GFC configuration
+     * 
+     * @return FieldSet 
+     */
     function getCMSFields() {
         return new FieldSet(
                 new TextField("SiteID", "Google Site ID"),
